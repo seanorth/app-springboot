@@ -1,0 +1,12 @@
+{
+  "realm": "MyRealm",
+  "auth-server-url": "http://localhost:8080/auth",
+  "ssl-required": "external",
+  "resource": "test",
+  "public-client": true,
+  "verify-token-audience": true,
+  "credentials": {
+    "secret": "OWAdfHYbQUaXBfZNxqcuxlXgdSRAVTHu"
+  },
+  "confidential-port": 0
+}

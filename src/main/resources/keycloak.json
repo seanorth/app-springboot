@@ -1,0 +1,10 @@
+{
+  "realm": "uuam",
+  "auth-server-url": "http://172.16.100.151:8080/auth/",
+  "ssl-required": "external",
+  "resource": "szf-local",
+  "credentials": {
+    "secret": "1hWGeXCpvZ5KstQJyOnFyIg8eTdykuwr"
+  },
+  "confidential-port": 0
+}

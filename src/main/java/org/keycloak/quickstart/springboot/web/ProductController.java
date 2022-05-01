@@ -28,6 +28,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import java.security.Principal;
+import java.util.ArrayList;
 
 
 @Controller
@@ -42,7 +43,12 @@ public class ProductController {
 
     @RequestMapping(value = "/products", method = RequestMethod.GET)
     public String handleCustomersRequest(Principal principal, Model model) {
-        model.addAttribute("products", productService.getProducts());
+        ArrayList<String> strings = new ArrayList<>();
+        strings.add("A");
+        strings.add("B");
+        strings.add("C");
+        model.addAttribute("products", strings);
+        //model.addAttribute("products", productService.getProducts());
         model.addAttribute("principal", principal);
         //String logoutUri = KeycloakUriBuilder.fromUri("http://172.16.100.151:8080/auth").path(ServiceUrlConstants.TOKEN_SERVICE_LOGOUT_PATH)
         //        .queryParam("redirect_uri", "http://localhost:8082/products").build("uuam").toString();
